@@ -2,7 +2,7 @@ clear;
 clf(0); clf(1); clf(2);clf(3);clf(4);
 tic();
 
-function y=fgls(x,a)
+function y=fgls(x,a) // Gaussian fit for the elastic peak
     y = a(1)*(exp( -4*log(2)*(x-a(3))^2/(a(2))^2 ));
 endfunction
 
